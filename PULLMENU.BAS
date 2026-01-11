@@ -1,6 +1,7 @@
 '****************************************************************************
 ' PULLMENU.BAS - Pull down menu demonstration
 '****************************************************************************
+' qb /l qw.glb
 REM $DYNAMIC
 DEFINT A-Z              'Make all variables integers by default.
 CALL QWINIT(4)          'Need to call this command before using any QW commands.
@@ -68,4 +69,5 @@ WHILE INKEY$ = "": WEND
 CALL WCLOSE(id)         'Close our status window.
 CALL MENUOFF            'Turn off menu system.
 END
+
 
